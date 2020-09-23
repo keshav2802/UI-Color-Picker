@@ -19,13 +19,16 @@ class Palette extends Component {
 
 	render() {
 		const colorBoxes = this.props.palette[this.state.level].map((color) => (
-			<ColorBox background={color[this.state.format]} name={color.name} />
+			<ColorBox background={color[this.state.format]} name={color.name} key={color.name} />
 		));
 
 		return (
 			<div className='Palette'>
 				<NavBar level={this.state.level} changeLevel={this.changeLevel} changeFormat={this.changeFormat} />
 				<div className='Palette-colors'>{colorBoxes}</div>
+				<div className="footer">
+					UI Color Picker By: Keshav Kumar
+				</div>
 			</div>
 		);
 	}

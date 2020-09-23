@@ -33,9 +33,9 @@ class NavBar extends Component {
         </div>
         <div className="select-menu">
           <Select value={this.state.format} onChange={this.handleChange}>
-            <MenuItem value="hex">HEX</MenuItem>
-            <MenuItem value="rgb">RGB</MenuItem>
-            <MenuItem value="rgba">RGBA</MenuItem>
+            <MenuItem value="hex">HEX-#68d4d4</MenuItem>
+            <MenuItem value="rgb">RGB-rgb(90,162,231)</MenuItem>
+            <MenuItem value="rgba">RGBA-rgba(138,133,230,1.0)</MenuItem>
           </Select>
         </div>
       </div>
