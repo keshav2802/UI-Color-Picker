@@ -15,12 +15,12 @@ class ColorBox extends Component {
   render() {
     return (
       <CopyToClipboard text={this.props.background}>
-        <div className="ColorBox" style={{background: this.props.background}}>
+        <div className="ColorBox" style={{background: this.props.background}} onClick={this.handleClick}>
         <div className="copy-container">
           <div className="box-content">
             <span>{this.props.name}</span>
           </div>
-          <button className="copy-button" onClick={this.handleClick}>{this.state.isCopied ? "COPIED!" : "COPY"}</button>
+          <button className="copy-button">{this.state.isCopied ? "COPIED!" : "COPY"}</button>
         </div>
       </div>
       </CopyToClipboard>
